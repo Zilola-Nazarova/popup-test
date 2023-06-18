@@ -38,15 +38,14 @@ ul.navigation a {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  padding-top: 45%;
-  background-image: url(./images/popup-corner.png), url(./images/popup-decoration-1.png), url(./images/popup-decoration-2.png), url(./images/popup-decoration-2.png);
+  background-image: url(./images/popup-decoration-1.png), url(./images/popup-corner.png), url(./images/popup-decoration-2.png), url(./images/popup-decoration-2.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top left, bottom center, top 74px right 57px, left 54px bottom 110px;
+  background-position: bottom center, top left, top 74px right 57px, left 54px bottom max(22%, 110px);
+  background-size: min(100%, 500px), 111px 74px, 40px 40px, 40px 40px;
 }
 
 .popup-list {
   list-style: none;
-  width: 50%;
   margin: 0 auto 0 auto;
 }
 
@@ -72,7 +71,10 @@ ul.popup-list a:visited {
 }
 
 .visible {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #headline {

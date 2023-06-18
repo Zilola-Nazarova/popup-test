@@ -12,7 +12,7 @@ closePopup.addEventListener('click', () => {
 
 const navigateToSection = document.querySelectorAll('.popup-list a');
 for (let i = 0; i < navigateToSection.length; i++) {
-  navigateToSection.addEventListener('click', () => {
+  navigateToSection[i].addEventListener('click', () => {
     const popup = document.querySelector('.popup-menu');
     popup.classList.toggle('visible');
   });
