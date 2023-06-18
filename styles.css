@@ -38,6 +38,10 @@ ul.navigation a {
   width: 100px;
   display: none;
   background-color: aquamarine;
+  position: absolute;
+  height: 100vh;
+  width: 100vh;
+  opacity: 0.5;
 }
 
 .visible {
