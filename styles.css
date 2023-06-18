@@ -26,11 +26,22 @@ ul.navigation {
 }
 
 ul.navigation li {
-  display: inline-block;  
+  display: inline-block;
 }
 
 ul.navigation a {
   text-decoration: none;
+}
+
+.popup_menu {
+  height: 100px;
+  width: 100px;
+  display: none;
+  background-color: aquamarine;
+}
+
+.visible {
+  display: block;
 }
 
 #headline {
