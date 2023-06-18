@@ -32,7 +32,7 @@ ul.navigation a {
   text-decoration: none;
 }
 
-.popup_menu {
+.popup-menu {
   display: none;
   background-color: #fff;
   position: absolute;
@@ -62,7 +62,7 @@ ul.popup-list a:visited {
   color: #1a2236;
 }
 
-.popup_menu > a {
+.popup-menu > a {
   position: absolute;
   right: 20px;
   top: 24px;
