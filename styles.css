@@ -1,0 +1,13 @@
+ul.navigation {
+  list-style: none;
+  text-decoration: none;
+}
+
+ul.navigation li {
+  display: inline-block;
+  
+}
+
+ul.navigation a {
+  text-decoration: none;
+}
