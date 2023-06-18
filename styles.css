@@ -1,13 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ul.navigation {
   list-style: none;
   text-decoration: none;
 }
 
 ul.navigation li {
-  display: inline-block;
-  
+  display: inline-block;  
 }
 
 ul.navigation a {
   text-decoration: none;
 }
+
