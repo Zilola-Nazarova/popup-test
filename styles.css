@@ -55,6 +55,7 @@ ul.navigation a {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
+  min-height: calc(100vh - 144px);
 }
 
 .text-block {
@@ -108,4 +109,19 @@ button.collaboration {
 
 .white {
   color: white;
+}
+
+#projects div {
+  height: 100vh;
+  background-color: coral;
+}
+
+#about div {
+  height: 100vh;
+  background-color: tan;
+}
+
+#contact div {
+  height: 100vh;
+  background-color: blueviolet;
 }
