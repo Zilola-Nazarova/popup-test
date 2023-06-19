@@ -140,9 +140,75 @@ button.collaboration {
   color: white;
 }
 
-#projects div {
-  height: 100vh;
-  background-color: coral;
+#work-section {
+  display: grid;
+  grid-template-rows: min-content;
+  row-gap: 0;
+}
+
+#work-section div[class*="dec-div"] {
+  display: none;
+}
+
+#work-section h2 {
+  display: inline-block;
+  margin: 0 auto 2rem 1rem;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+}
+
+.work-info {
+  background-color: #1a2236;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card img {
+  display: block;
+  width: 100%;
+  margin-top: -2px;
+  margin-bottom: -2px;
+}
+
+.work-card img[src*="big"] {
+  display: none;
+}
+
+.project-name {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
+
+.category-list {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.category-list li {
+  display: inline-block;
+  background-color: #98dede;
+  margin-right: 0.625rem;
+  padding: 0.375rem 0.625rem;
+  font-weight: 300;
+  font-size: 0.646rem;
+  line-height: 0.5rem;
+}
+
+a.see-project {
+  border: 1px solid #fff;
+  background-image: url(./images/Union.png);
+  background-repeat: no-repeat;
+  background-position: center right 0.688rem;
+  width: 11.125rem;
+  margin-top: 1.25rem;
+  padding: 0.625rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.5rem;
 }
 
 #about div {
