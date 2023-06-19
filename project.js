@@ -55,3 +55,26 @@ const projectDetails = [
     "link-to-source": "https://github.com/Zilola-Nazarova/zilola-portfolio"
   }
 ]
+
+const projects = document.querySelectorAll('.work-card');
+console.log(projects);
+for (let i = 0; i < projects.length; i += 1) {
+  let card = document.createElement('div');
+  card.id = `project-${i}`;
+  card.classList.add('project-details');
+  card.innerHTML = '<p>CreateElement example</p>';
+  projects[i].appendChild(card);
+}
+
+
+const projectBtn = document.querySelectorAll('.see-project');
+for (let i = 0; i < projectBtn.length; i += 1) {
+  projectBtn[i].addEventListener('click', () => {
+    const projectPopup = document.getElementById(`project-${i}`);
+    projectPopup.classList.toggle('visible');
+    // const restOfThePage = document.querySelectorAll('header, section, footer');
+    // for (let i = 0; i < restOfThePage.length; i += 1) {
+    //   restOfThePage[i].classList.toggle('unvisible');
+    // }
+  });
+}

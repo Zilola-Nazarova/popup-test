@@ -34,6 +34,9 @@ ul.navigation a {
 
 .popup-menu {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   position: absolute;
   height: 100vh;
@@ -71,10 +74,7 @@ ul.popup-list a:visited {
 }
 
 .visible {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex; 
 }
 
 #headline {
@@ -211,6 +211,18 @@ a.see-project {
   line-height: 1.5rem;
 }
 
+
+
+
+.project-details {
+  /* position: fixed; */
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  border: #1a2236 2px solid;
+}
+
 #about div {
   height: 100vh;
   background-color: tan;
@@ -219,4 +231,13 @@ a.see-project {
 #contact div {
   height: 100vh;
   background-color: blueviolet;
+}
+
+#footer.unvisible,
+#about-myself-section.unvisible,
+#contact-form.unvisible,
+#work-section.unvisible,
+#headline.unvisible,
+header.unvisible {
+  display: none;
 }

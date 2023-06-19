@@ -1,19 +1,30 @@
-const menu = document.querySelector('.menu');
-menu.addEventListener('click', () => {
-  const popup = document.querySelector('.popup-menu');
-  popup.classList.toggle('visible');
+const menuBtn = document.querySelector('.menu');
+menuBtn.addEventListener('click', () => {
+  const mobilePopup = document.querySelector('.popup-menu');
+  mobilePopup.classList.toggle('visible');
+  const restOfThePage = document.querySelectorAll('section, footer');
+  for (let i = 0; i < restOfThePage.length; i += 1) {
+    restOfThePage[i].classList.toggle('unvisible');
+  }
 });
 
-const closePopup = document.querySelector('.popup-close');
-closePopup.addEventListener('click', () => {
-  const popup = document.querySelector('.popup-menu');
-  popup.classList.toggle('visible');
+document.querySelector('.popup-close').addEventListener('click', () => {
+  const mobilePopup = document.querySelector('.popup-menu');
+  mobilePopup.classList.toggle('visible');
+  const restOfThePage = document.querySelectorAll('section, footer');
+  for (let i = 0; i < restOfThePage.length; i += 1) {
+    restOfThePage[i].classList.toggle('unvisible');
+  }
 });
 
-const navigateToSection = document.querySelectorAll('.popup-list a');
-for (let i = 0; i < navigateToSection.length; i += 1) {
-  navigateToSection[i].addEventListener('click', () => {
-    const popup = document.querySelector('.popup-menu');
-    popup.classList.toggle('visible');
+const linkBtn = document.querySelectorAll('.popup-list a');
+for (let i = 0; i < linkBtn.length; i += 1) {
+  linkBtn[i].addEventListener('click', () => {
+    const mobilePopup = document.querySelector('.popup-menu');
+    mobilePopup.classList.toggle('visible');
+    const restOfThePage = document.querySelectorAll('section, footer');
+    for (let i = 0; i < restOfThePage.length; i += 1) {
+      restOfThePage[i].classList.toggle('unvisible');
+    }
   });
 }
