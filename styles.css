@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+nav {
+  height: 74px;
+  background-image: url(./images/image_geometry_1.png);
+  background-repeat: no-repeat;
+}
+
+nav > a {
+  float: right;
+  margin: 19px 14px;
+}
+
+ul.navigation {
+  display: none;
+  list-style: none;
+}
+
+ul.navigation li {
+  display: inline-block;
+}
+
+ul.navigation a {
+  text-decoration: none;
+}
+
+.popup-menu {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./images/popup-decoration-1.png), url(./images/popup-corner.png), url(./images/popup-decoration-2.png), url(./images/popup-decoration-2.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: bottom center, top left, top 74px right 57px, left 54px bottom max(22%, 110px);
+  background-size: min(100%, 500px), 111px 74px, 40px 40px, 40px 40px;
+}
+
+.popup-list {
+  list-style: none;
+  margin: 0 auto 0 auto;
+}
+
+ul.popup-list li {
+  text-align: center;
+  margin: 1em 0;
+}
+
+ul.popup-list a {
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+ul.popup-list a:visited {
+  color: #1a2236;
+}
+
+.popup-menu img {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#headline {
+  margin-top: 1.875rem;
+  margin-bottom: 2.5rem;
+  background-image: url(./images/image_geometry_2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  min-height: calc(100vh - 144px);
+}
+
+.text-block {
+  margin: 0 0.9rem 0 1rem;
+  min-height: calc(100vh - 9rem);
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#headline .headline-decoration {
+  display: none;
+}
+
+h1.playfair {
+  line-height: 3.125rem;
+  font-size: 3.125rem;
+  font-weight: 400;
+  margin-bottom: 1.063rem;
+}
+
+#headline p.poppins {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+button.collaboration {
+  display: block;
+  height: 3.125rem;
+  margin-top: 1.375rem;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: #1a2236;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.dark-blue {
+  color: #1a2236;
+}
+
+.white {
+  color: white;
+}
+
+#projects div {
+  height: 100vh;
+  background-color: coral;
+}
+
+#about div {
+  height: 100vh;
+  background-color: tan;
+}
+
+#contact div {
+  height: 100vh;
+  background-color: blueviolet;
+}
