@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles.css" rel="stylesheet">
+  
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,7 @@
         <a class="popup-close" href="#"><img src="./images/popup-close.png"></a>
         <ul class="popup-list">
           <li><a href="#headline">Home</a></li>
-          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#work-section">Portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -49,15 +50,73 @@
       </div>  
     </section>
     <script src="./script.js"></script>
-    <section id="projects">
+    <section  id="work-section" class="">
+      <h2 class="playfair dark-blue">Projects</h2>
+      <div class="dec-div-2"><img class="decoration" src="./images/image-geometry_2.png"></div>
+      <div class="dec-div-3"><img class="decoration" src="./images/image-geometry_3.png"></div>
+      <div class="dec-div-4"><img class="decoration" src="./images/image-geometry_4.png"></div>
+      <div class="dec-div-5"><img class="decoration" src="./images/image-geometry_5.png"></div>
+      <div class="work-card w1">
+        <img class="project-preview" src="./images/project-1.png" alt="Preview of the project-1">
+        <img class="project-preview" src="./images/Project-1-big.png" alt="Preview of the project-1">
+        <div class="work-info">
+          <p class="project-name white poppins">Project name goes here</p>
+          <ul class="category-list dark-blue poppins">
+            <li class="category">HTML/CSS</li>
+            <li class="category">Ruby on Rails</li>
+            <li class="category">JavaScript</li>
+          </ul>
+          <a class="see-project white poppins">See this project</a>
+        </div>      
+      </div>
+      <div class="work-card w2">
+        <img class="project-preview" src="./images/project-2.png" alt="Preview of the project-2">
+        <img class="project-preview" src="./images/Project-2-big.png" alt="Preview of the project-2">
+        <div class="work-info">
+          <p class="project-name white poppins">Project name goes here</p>
+          <ul class="category-list dark-blue poppins">
+            <li class="category">HTML/CSS</li>
+            <li class="category">Ruby on Rails</li>
+            <li class="category">JavaScript</li>
+          </ul>
+          <a class="see-project white poppins">See this project</a>
+        </div>
+      </div>
+      <div class="work-card w3">
+        <img class="project-preview" src="./images/project-3.png" alt="Preview of the project-3">
+        <img class="project-preview" src="./images/Project-3-big.png" alt="Preview of the project-3">
+        <div class="work-info">
+          <p class="project-name white poppins">Project name goes here</p>
+          <ul class="category-list dark-blue poppins">
+            <li class="category">HTML/CSS</li>
+            <li class="category">Ruby on Rails</li>
+            <li class="category">JavaScript</li>
+          </ul>
+          <a class="see-project white poppins">See this project</a>
+        </div>
+      </div>
+    </section>
+    <section id="about-myself-section">
       <div></div>
     </section>
-    <section id="about">
-      <div></div>
-    </section>
-    <section id="contact">
-      <div></div>
+    <section id="contact-form">
+      <section id="contact-form" class="">
+        <h2 class="dark-blue playfair">Get started</h2>
+        <p class="dark-blue poppins">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+        <form id="send-message" action="https://formspree.io/f/xpzegyyg" method="POST">
+          <label class="poppins" for="user-name">Your name</label>
+          <input type="text" id="user-name" name="user_name" placeholder="Enter your name" maxlength="30" required>
+          <label class="poppins" for="user-email">Your email</label>
+          <input type="email" id="user-email" name="user_email" placeholder="Enter your email." required>
+          <small class="poppins"></small>
+          <label class="poppins" for="user-message">Your message</label>
+          <textarea id="user-message" name="user_message" placeholder="Enter your message here..." maxlength="500" required></textarea>
+          <button class="poppins white" type="submit" >Start collaboration</button>
+        </form>
+      </section>
     </section>
   </main>
+  <script src="./project.js"></script>
+  <script src="./form-validate.js"></script>
 </body>
 </html>
