@@ -73,9 +73,7 @@ ul.popup-list a:visited {
   top: 24px;
 }
 
-.visible {
-  display: flex; 
-}
+
 
 #headline {
   margin-top: 1.875rem;
@@ -211,24 +209,25 @@ a.see-project {
   line-height: 1.5rem;
 }
 
-
-
-
 .project-details {
+  display: none;
   /* position: fixed; */
-  z-index: 1;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 57px 15px 20px 15px;
   background-color: #fff;
-  border: #1a2236 2px solid;
 }
 
-#about div {
+#about-myself-section div {
   height: 100vh;
   background-color: tan;
 }
 
-#contact div {
+#contact-form div {
   height: 100vh;
   background-color: blueviolet;
 }
@@ -240,4 +239,8 @@ a.see-project {
 #headline.unvisible,
 header.unvisible {
   display: none;
+}
+
+.visible {
+  display: flex; 
 }
