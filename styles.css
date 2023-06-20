@@ -244,3 +244,7 @@ header.unvisible {
 .visible {
   display: flex; 
 }
+
+small {
+  color: #e45865;
+}
